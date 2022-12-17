@@ -14,12 +14,37 @@ h1,h2,h3,h4,p {
     margin-bottom: 0;
 }
 
-.container {
+/* .container {
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+} */
+
+.container {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+            width: 396px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 736px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1158px;
+    }
 }
 
 /* ====================COMPONENTS==================== */
@@ -78,6 +103,50 @@ img {
     0px 1px 6px rgba(46, 47, 66, 0.08)
 }
 
+.logo-web {
+    color: #4D5AE5;
+}
+
+.logo-studio-dark {
+    font-family: var(--secondary-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    text-transform: uppercase;
+    color: var(--accent-color);
+}
+
+@media screen and (max-width: 767px) {
+.menu {
+        display: none;
+    }
+
+    .communication {
+        display: none;
+    }
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.page-header-contaniar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-menu-open {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    line-height: 0;
+}}
+
+@media screen and (min-width: 768px) {
+    .mobile-menu-open {
+    display: none;
+}
+
 .page-header-contaniar {
     display: flex;
 }
@@ -96,25 +165,8 @@ img {
 .menu-item {
     flex-basis: calc((100% - 80px) / 3);
 }
-
-
 .logo {
-    margin-right: 77px;
-}
-
-.logo-web {
-    color: #4D5AE5;
-}
-
-.logo-studio-dark {
-    font-family: var(--secondary-font);
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.33;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--accent-color);
-}
+    margin-right: 120px;}
 
 .nav-link:hover,
 .nav-link:focus {
@@ -128,7 +180,6 @@ img {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
     color: var(--accent-color);
     transition: color var(--transition-dur-and-func);
 }
@@ -149,7 +200,32 @@ img {
     bottom: 0;
     background: #4D5AE5;
     border-radius: 2px;
-    content: "";       
+    content: "";
+}
+
+.communication {
+    padding-top: 24px;
+    align-items: center;
+    margin-left: auto;
+}
+
+.contacts:hover,
+.contacts:focus {
+    color: #4D5AE5;
+}
+
+.contacts {
+    display: block;
+    font-size: 12px;
+    line-height: 1.33;
+    color: #434455;
+    transition: color var(--transition-dur-and-func);
+}}
+
+
+@media screen and (min-width: 1200px) {
+.logo {
+    margin-right: 77px;
 }
 
 .communication {
@@ -157,24 +233,17 @@ img {
     flex-wrap: wrap;
     gap: 40px;
     align-items: center;
+    padding-bottom: 24px;
     margin-left: auto; 
 }
 
-
-.contacts:hover,
-.contacts:focus {
-    color: #4D5AE5;
-}
 .contacts {
-    padding-top: 24px;
-    padding-bottom: 24px;
     display: block;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
     color: var(--accent-color);
     transition: color var(--transition-dur-and-func);
-}
+}}
 
 /* =====================/HEADER==================== */
 
