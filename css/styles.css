@@ -97,7 +97,7 @@ img {
 
 /* ====================HEADER==================== */
 
-/* .page-header {
+.page-header {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08)
@@ -243,7 +243,7 @@ img {
     line-height: 1.5;
     color: var(--accent-color);
     transition: color var(--transition-dur-and-func);
-}} */
+}}
 
 /* =====================/HEADER==================== */
 
@@ -312,10 +312,18 @@ img {
             text-align: center;
             padding: 112px 56px;
             background-color: var(--accent-color);
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Hero-tablet.jpg);
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/Hero-tablet.jpg);
             background-size: cover;
         }
-    
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+        screen and (min-resolution: 192dpi) and (min-width: 768px),
+        screen and (min-resolution: 192dppx) and (min-width: 768px) {
+            .hero {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/Hero-tablet@2x.jpg)
+            }}
+
         .hero-title {
             width: 100%;
             max-width: 317px;
