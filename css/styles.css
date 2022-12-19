@@ -355,7 +355,7 @@ screen and (min-resolution: 288dppx) and (max-width: 767px) {
             border-radius: 4px;
             transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
     
-        }} */
+        }}
 
 
 /* .hero {
@@ -756,6 +756,7 @@ screen and (min-resolution: 288dppx) and (max-width: 767px) {
                                 gap: 16px;
                             }
                             .modal-form-input-footer {
+                                width: auto;
                                 padding-left: 16px;
                                 padding-right: 16px;
                                 width: 396px;
@@ -1129,9 +1130,42 @@ screen and (min-resolution: 288dppx) and (max-width: 767px) {
     transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
 }
 
-
-
 /* ==================== /MODAL FORM ================== */
+
+/* ==================== MOBILE MENU ================== */
+
+.mobile-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    top:0;
+    left: 0;
+    background-color: #FFFFFF;
+}
+
+.mobile-menu-container {
+    position: relative;
+}
+
+.mobile-menu-close {
+    position: absolute;
+        top: 24px;
+        right: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        padding: 0;
+        background-color: transparent;
+        border: 1px solid #E7E9FC;
+        transition: box-shadow var(--transition-dur-and-func);
+}
+
+/* ==================== /MOBILE MENU ================== */
 
 /* ======================MAIN PORTFOLIO===================== */
 
