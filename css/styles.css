@@ -278,13 +278,9 @@ screen and (min-resolution: 192dppx) and (max-width: 767px) {
 }
 
 .hero-title {
-    width: 496px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 48px;
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11;
     text-align: center;
     color: #FFFFFF;
 }
@@ -439,9 +435,16 @@ screen and (min-resolution: 192dppx) and (max-width: 767px) {
             line-height: 1.2;
             color: var(--accent-color);
         }
-        .title-description:first-child {
-            margin-top: 72px;
-        }
+            .company-quality {
+                padding-top: 96px;
+                padding-bottom: 96px;
+            }
+                .quality-description {
+                    margin-bottom: 72px;
+                }
+                    .quality-description:last-child {
+                        margin-bottom: 0;
+                    }
     }
 
 
