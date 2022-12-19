@@ -355,7 +355,7 @@ screen and (min-resolution: 192dppx) and (max-width: 767px) {
             border-radius: 4px;
             transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
     
-        }}
+        }} */
 
 
 /* .hero {
@@ -502,6 +502,12 @@ screen and (min-resolution: 192dppx) and (max-width: 767px) {
 /* ============================= /COMPANY-QUALITY =======================*/
 
 /* ============================= OUR WORKERS ==============================*/
+
+@media screen and (max-width: 767px) {
+    .our-works {
+        display: none;
+    }
+}
 
 .work-examples {
     display: flex;
