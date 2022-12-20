@@ -79,7 +79,8 @@ img {
 .logo-web,
 .nav-link,
 .contacts,
-.link-works {
+.link-works,
+.nav-link-mobile {
     text-decoration: none;
 }
 
@@ -116,7 +117,7 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-.menu {
+    .menu {
         display: none;
     }
 
@@ -176,7 +177,7 @@ img {
     padding-top: 24px;
     padding-bottom: 24px;
     display: block;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     color: var(--accent-color);
@@ -693,8 +694,8 @@ screen and (min-resolution: 288dppx) and (max-width: 767px) {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 72px; */
-    }
+        gap: 72px;
+    } */
         .footer-description {
             display: block;
             text-align: center;
@@ -1161,19 +1162,45 @@ screen and (min-resolution: 288dppx) and (max-width: 767px) {
 
 .mobile-menu-close {
     position: absolute;
-        top: 24px;
-        right: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-        padding: 0;
-        background-color: transparent;
-        border: 1px solid #E7E9FC;
-        transition: box-shadow var(--transition-dur-and-func);
+    top: 24px;
+    right: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    padding: 0;
+    background-color: transparent;
+    border: 1px solid #E7E9FC;
+    transition: box-shadow var(--transition-dur-and-func);
+}
+
+.nav-menu-mobile {
+    padding-top: 80px;
+    padding-left: 40px;
+}
+
+.nav-link-mobile:hover,
+.nav-link-mobile:focus {
+    color: #4D5AE5;
+}
+
+.nav-link-mobile {
+    display: block;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.11;
+    color: var(--accent-color);
+    transition: color var(--transition-dur-and-func);
+}
+
+.menu-item-mobile {
+    margin-bottom: 40px;
+}
+.menu-item-mobile:last-child {
+    margin-bottom: 0;
 }
 
 /* ==================== /MOBILE MENU ================== */
