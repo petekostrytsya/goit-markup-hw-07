@@ -253,7 +253,7 @@ img {
     margin: auto;
     max-width: 767px;
     text-align: center;
-    padding: 112px 56px;
+    padding: 112px 0;
     background-color: var(--accent-color);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Hero-mobile.jpg);
     background-size: cover;
@@ -425,8 +425,13 @@ screen and (min-resolution: 288dppx) and (max-width: 767px) {
 }
 
 @media screen and (max-width: 767px) {
-    .quality-list-icon {
-        display: none;
+    .company-quality {
+            padding-top: 96px;
+            padding-bottom: 96px;
+        }
+
+        .quality-list-icon {
+            display: none;
     }
         .title-description {
             text-align: center;
@@ -435,10 +440,6 @@ screen and (min-resolution: 288dppx) and (max-width: 767px) {
             line-height: 1.2;
             color: var(--accent-color);
         }
-            .company-quality {
-                padding-top: 96px;
-                padding-bottom: 96px;
-            }
                 .quality-description {
                     margin-bottom: 72px;
                 }
@@ -520,6 +521,7 @@ screen and (min-resolution: 288dppx) and (max-width: 767px) {
 /* =============================== EMPLOYEES ================================ */
 
 .employees-section {
+    padding: 96px 0;
     background-color: #F4F4FD;
 }
 
@@ -619,6 +621,9 @@ screen and (min-resolution: 288dppx) and (max-width: 767px) {
 
 
 @media screen and (max-width: 767px) {
+    .customers-section {
+        padding: 96px 0;
+    }
     .customers-list {
         display: flex;
         flex-wrap: wrap;
@@ -684,11 +689,11 @@ screen and (min-resolution: 288dppx) and (max-width: 767px) {
 /* ======================FOOTER===================== */
 
 @media screen and (max-width: 767px) {
-    .footer-info {
+    /* .footer-info {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 72px;
+        gap: 72px; */
     }
         .footer-description {
             display: block;
@@ -720,8 +725,11 @@ screen and (min-resolution: 288dppx) and (max-width: 767px) {
                 }
         
                 .text-footer {
+                    margin: 0 auto;
                     margin-top: 8px;
                     width: 264px;
+                    text-align: center;
+                    margin-bottom: 72px;
                     font-size: 16px;
                     line-height: 1.5;
                     color: var(--secondary-footer-color);
@@ -733,6 +741,7 @@ screen and (min-resolution: 288dppx) and (max-width: 767px) {
                     .footer-social-list {
                         display: flex;
                         gap: 16px;
+                        justify-content: center;
                     }
                         .footer-social-list-link:focus,
                         .footer-social-list-link:hover {
@@ -743,23 +752,24 @@ screen and (min-resolution: 288dppx) and (max-width: 767px) {
                             display: flex;
                             justify-content: center;
                             align-items: center;
+                            margin-bottom: 72px;
                             width: 40px;
                             height: 40px;
                             border-radius: 50%;
                             background-color: rgba(255, 255, 255, 0.1);
                             transition: background-color var(--transition-dur-and-func);
                         }
-                            .footer-form {
+                            /* .footer-form {
                                 display: flex;
                                 flex-direction: column;
                                 align-items: center;
                                 gap: 16px;
-                            }
+                            } */
                             .modal-form-input-footer {
-                                width: auto;
+                                width: 100%;
+                                max-width: 396px;
                                 padding-left: 16px;
                                 padding-right: 16px;
-                                width: 396px;
                                 height: 40px;
                                 font-size: 12px;
                                 line-height: 2;
@@ -779,9 +789,10 @@ screen and (min-resolution: 288dppx) and (max-width: 767px) {
                                 }
                             
                                     .modal-form-submit-footer {
+                                        margin: 0 auto;
+                                        margin-top: 16px;
                                         display: flex;
                                         justify-content: center;
-                                        align-items: center;
                                         padding: 8px 24px;
                                         gap: 16px;
                                         width: 168px;
