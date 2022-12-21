@@ -504,6 +504,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     background-color: #F4F4FD;
 }
 
+.quality-list-icon {
+    display: block;
+}
+
 .company-quality {
     padding-bottom: 0;
 }
@@ -553,10 +557,13 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 @media screen and (min-width: 1200px) {
-.work-examples {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
+    .our-works {
+            display: block;
+        }
+    .work-examples {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 24px;
 }}
 
 /* ============================= /OUR WORKERS ==============================*/
@@ -1109,6 +1116,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 .footer-description {
     display: block;
     margin-right: 120px;
+    margin-bottom: 0;
 }
 
 .footer-social-media {
