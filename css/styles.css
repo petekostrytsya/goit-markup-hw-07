@@ -365,10 +365,11 @@ screen and (min-resolution: 3dppx) and (max-width: 767px) {
     
     }
 
-
-/* .hero {
+@media screen and (min-width: 1200px) {
+.hero {
     margin: 0 auto;
     max-width: 1440px;
+    height: 100%;
     text-align: center;
     padding-top: 192px;
     padding-bottom: 192px;
@@ -376,6 +377,15 @@ screen and (min-resolution: 3dppx) and (max-width: 767px) {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
     url("../images/Hero-card.jpg");
     background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/Hero-card@2x.jpg)
+    }
 }
 
 
@@ -412,7 +422,7 @@ screen and (min-resolution: 3dppx) and (max-width: 767px) {
     border-radius: 4px;
     transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
 
-} */
+}}
 /* ======================/HERO====================== */
 
 /* =====================ABOUT==================== */
@@ -482,19 +492,7 @@ screen and (min-resolution: 3dppx) and (max-width: 767px) {
 
     }
 
-
-/* .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
+@media screen and (min-width: 1200px) {
 
 .quality-list-link {
     margin-bottom: 8px;
@@ -524,15 +522,19 @@ screen and (min-resolution: 3dppx) and (max-width: 767px) {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 0.02em;
     color: var(--accent-color);
 }
 
 .theses {
     display: flex;
+    flex-wrap: nowrap;
     gap: 24px;
+}
 
-} */
+.quality-description {
+        flex-basis: calc((100% - 72px) / 4);
+    }
+}
 
 /* ============================= /COMPANY-QUALITY =======================*/
 
@@ -549,11 +551,13 @@ screen and (min-resolution: 3dppx) and (max-width: 767px) {
         display: none;
     }
 }
+
+@media screen and (min-width: 1200px) {
 .work-examples {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-}
+}}
 
 /* ============================= /OUR WORKERS ==============================*/
 
@@ -667,13 +671,15 @@ screen and (min-resolution: 3dppx) and (max-width: 767px) {
 
 
 }
-/* .text-team {
+
+@media screen and (min-width: 1200px) {
+.text-team {
     margin-bottom: 12px;
 }
 
 .employees {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 24px;
 }
 
@@ -707,7 +713,7 @@ screen and (min-resolution: 3dppx) and (max-width: 767px) {
     height: 40px;
     border-radius: 50%;
     background-color: #4D5AE5;
-} */
+}}
     
 
 /* =============================== /EMPLOYEES ================================ */
@@ -787,9 +793,10 @@ screen and (min-resolution: 3dppx) and (max-width: 767px) {
 }
 
 
-
-/* .customers-list {
+@media screen and (min-width: 1200px) {
+.customers-list {
     display: flex;
+    flex-wrap: nowrap;
     gap: 24px;
 }
 
@@ -814,7 +821,7 @@ screen and (min-resolution: 3dppx) and (max-width: 767px) {
     border-radius: 5px;
     color: rgba(142, 143, 153, 1);
     transition: border var(--transition-dur-and-func);
-} */
+}}
 
 /* =============================/CUSTOMERS ================================= */
 
@@ -981,6 +988,7 @@ screen and (min-resolution: 3dppx) and (max-width: 767px) {
         .footer-description {
             display: block;
             margin-right: 24px;
+            margin-bottom: 72px;
         }
     
         .footer-social-list {
@@ -1005,7 +1013,6 @@ screen and (min-resolution: 3dppx) and (max-width: 767px) {
         }
     
         .footer-form {
-            margin-top: 72px;
             display: flex;
         }
     
@@ -1061,7 +1068,8 @@ screen and (min-resolution: 3dppx) and (max-width: 767px) {
     
 }
 
-/* .footer {
+@media screen and (min-width: 1200px) {
+.footer {
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: var(--accent-color);
@@ -1094,7 +1102,8 @@ screen and (min-resolution: 3dppx) and (max-width: 767px) {
 }
 
 .footer-info {
-    display: flex;  
+    display: flex;
+    flex-wrap: nowrap; 
 }
 
 .footer-description {
@@ -1130,7 +1139,7 @@ screen and (min-resolution: 3dppx) and (max-width: 767px) {
 }
 
 .footer-form {
-    display: flex;
+    display: flex;   
 }
 
 .modal-form-input-footer {
@@ -1180,7 +1189,7 @@ screen and (min-resolution: 3dppx) and (max-width: 767px) {
 .modal-form-submit-footer:focus {
     color: #FFFFFF;
     background-color: #404BBF;
-} */
+}}
 /* ======================/FOOTER===================== */
 
 /* ===================== MODAL WINDOW =================== */
