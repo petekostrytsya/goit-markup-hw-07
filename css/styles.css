@@ -1406,7 +1406,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 /* ==================== MOBILE MENU ================== */
 
-@media screen and (max-width: 767px) {
 .mobile-menu {
     position: fixed;
     width: 100%;
@@ -1499,7 +1498,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 .social-list-mobile {
     display: flex;
     gap: 56px;
-}}
+}
 
 
 /* ==================== /MOBILE MENU ================== */
