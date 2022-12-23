@@ -246,6 +246,10 @@ img {
     line-height: 1.5;
     color: var(--accent-color);
     transition: color var(--transition-dur-and-func);
+}
+
+.contacts-mail {
+    margin-bottom: 0px;
 }}
 
 /* =====================/HEADER==================== */
@@ -454,11 +458,11 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         .quality-list-icon {
             display: none;
     }
-        .title-description {
+        .title-quality {
             text-align: center;
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 1.2;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 1.11;
             color: var(--accent-color);
         }
                 .quality-description {
@@ -477,10 +481,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         .quality-list-icon {
             display: none;
         }
-                .title-description {
-                    font-weight: 700;
-                    font-size: 20px;
-                    line-height: 1.2;
+                .title-quality {
+                    font-weight: 500;
+                    font-size: 36px;
+                    line-height: 1.11;
                     color: var(--accent-color);
                 }
                 .theses {
@@ -525,7 +529,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     color: var(--accent-color);
 }
 
-.title-description {
+.title-quality {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
@@ -580,8 +584,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 @media screen and (max-width: 767px) {
     .title-section {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11px;
         text-align: center;
-        /* padding-top: 96px; */
         margin-bottom: 72px;
     }
             .employees {
@@ -590,6 +596,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
                 justify-content: center;
                 gap: 24px;
         }
+
             .text-team {
                 text-align: center;
                 margin-bottom: 8px;
@@ -628,8 +635,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 @media screen and (min-width: 768px) {
     .title-section {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.11px;
             text-align: center;
-            /* padding-top: 96px; */
             margin-bottom: 72px;
         }
     
@@ -640,7 +649,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
             row-gap: 56px;
             column-gap: 24px;
         }
-    
+
         .text-team {
             text-align: center;
             margin-bottom: 8px;
@@ -1582,6 +1591,13 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
                                         0px 1px 1px rgba(46, 47, 66, 0.16),
                                         0px 2px 1px rgba(46, 47, 66, 0.08);
                                 }
+
+                                .title-description {
+                                    font-weight: 500;
+                                    font-size: 20px;
+                                    line-height: 1.2;
+                                    color: #2E2F42;
+                                }
                 
                                 .title-foto {
                                     text-align: left;
@@ -1596,11 +1612,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
                                     border-right: 0.5px solid #F4F4FD;
                                     border-bottom: 0.5px solid #F4F4FD;
                                 }
-                
-                                /* .portfolio-list-img-wrapper {
-                                    position: relative;
-                                    overflow: hidden;
-                                } */
                 
                                 .overlay {
                                     display: none;
@@ -1681,7 +1692,13 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
                 0px 1px 1px rgba(46, 47, 66, 0.16),
                 0px 2px 1px rgba(46, 47, 66, 0.08);
         }
-    
+        
+        .title-description {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.2;
+            color: #2E2F42;
+        }
     
         .works-card-content-wrapper {
             padding-top: 32px;
